@@ -1,0 +1,646 @@
+Package: base-files
+Version: 118.2-r39585
+Depends: libc, netifd
+Provides: 
+Source: package/base-files
+Section: base
+Status: unknown ok not-installed
+Essential: no
+Priority: optional
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Architecture: uml
+Installed-Size: 30070
+Filename: base-files_118.2-r39585_uml.ipk
+Size: 30834
+MD5Sum: c5162f3ab9cd0257ecd269817269a480
+Description:  This package contains a base filesystem and system scripts for OpenWrt.
+
+Package: busybox
+Version: 1.19.4-6
+Depends: libc
+Provides: 
+Source: package/busybox
+Section: base
+Status: unknown ok not-installed
+Essential: yes
+Priority: optional
+Maintainer: Nicolas Thill <nico@openwrt.org>
+Architecture: uml
+Installed-Size: 246991
+Filename: busybox_1.19.4-6_uml.ipk
+Size: 246817
+MD5Sum: 275b7568be870d3928897581fecd6d6c
+Description:  The Swiss Army Knife of embedded Linux.
+ It slices, it dices, it makes Julian Fries.
+
+Package: dnsmasq
+Version: 2.66-2
+Depends: libc
+Provides: 
+Source: package/dnsmasq
+Section: net
+Status: unknown ok not-installed
+Essential: no
+Priority: optional
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Architecture: uml
+Installed-Size: 101932
+Filename: dnsmasq_2.66-2_uml.ipk
+Size: 102449
+MD5Sum: 54c63f61ca05e76eab1afc1bcbebee81
+Description:  It is intended to provide coupled DNS and DHCP service to a LAN.
+
+Package: dropbear
+Version: 2011.54-2
+Depends: libc
+Provides: 
+Source: package/dropbear
+Section: net
+Status: unknown ok not-installed
+Essential: no
+Priority: optional
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Architecture: uml
+Installed-Size: 90836
+Filename: dropbear_2011.54-2_uml.ipk
+Size: 91414
+MD5Sum: 023c3a1177ef220b6bfa4232416ee462
+Description:  A small SSH2 server/client designed for small memory environments.
+
+Package: firewall
+Version: 2013-06-29
+Depends: libc, libubox, libubus, libuci, libip4tc, libip6tc, libxtables
+Provides: 
+Source: package/firewall
+Section: net
+Status: unknown ok not-installed
+Essential: no
+Priority: optional
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Architecture: uml
+Installed-Size: 56999
+Filename: firewall_2013-06-29_uml.ipk
+Size: 57611
+MD5Sum: 916fd49f8c5bd7d3da2fdb670ff606af
+Description:  This package provides a config-compatible C implementation of the UCI firewall.
+
+Package: hotplug2
+Version: 1.0-beta-4
+Depends: libc
+Provides: 
+Source: package/hotplug2
+Section: base
+Status: unknown ok not-installed
+Essential: no
+Priority: optional
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Architecture: uml
+Installed-Size: 17622
+Filename: hotplug2_1.0-beta-4_uml.ipk
+Size: 18257
+MD5Sum: 19859d1779b10b80d25f24dfad4bebee
+Description:  Hotplug2 is a trivial replacement of some of the UDev functionality
+ in a tiny pack, intended for Linux early userspace: Init RAM FS and InitRD.
+ This is an implementation of Hotplug2-1.0-beta
+
+Package: iptables
+Version: 1.4.10-5
+Depends: libc, kmod-ipt-core, libip4tc, libxtables
+Provides: 
+Source: package/iptables
+Section: net
+Status: unknown ok not-installed
+Essential: no
+Priority: optional
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Architecture: uml
+Installed-Size: 42049
+Filename: iptables_1.4.10-5_uml.ipk
+Size: 42804
+MD5Sum: 96cc8d30a0aae42310625b24d4308a5a
+Description:  IPv4 firewall administration tool.
+ 
+ Matches:
+ - icmp
+ - tcp
+ - udp
+ - comment
+ - limit
+ - mac
+ - multiport
+ 
+ Targets:
+ - ACCEPT
+ - DROP
+ - REJECT
+ - LOG
+ - TCPMSS
+ 
+ Tables:
+ - filter
+ - mangle
+ 
+
+Package: jshn
+Version: 2013-10-19-734d28eb1a46358743cf8837c91e5d46695c3b91
+Depends: libc, libjson-c
+Provides: 
+Source: package/libubox
+Section: utils
+Status: unknown ok not-installed
+Essential: no
+Priority: optional
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Architecture: uml
+Installed-Size: 5217
+Filename: jshn_2013-10-19-734d28eb1a46358743cf8837c91e5d46695c3b91_uml.ipk
+Size: 5871
+MD5Sum: f0f7e9e6aa8e3ec0037a8f4551ccfe70
+Description:  Library for parsing and generating JSON from shell scripts
+
+Package: kmod-ipt-conntrack
+Version: 3.3.8-1
+Depends: kernel (=3.3.8-1-960ef654075dafb6ca4ddb78407259b4), kmod-ipt-core
+Provides: 
+Source: package/kernel
+Section: kernel
+Status: unknown hold not-installed
+Essential: no
+Priority: optional
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Architecture: uml
+Installed-Size: 33677
+Filename: kmod-ipt-conntrack_3.3.8-1_uml.ipk
+Size: 34571
+MD5Sum: 2832be61863e717b32fdea84f3940ee1
+Description:  Netfilter (IPv4) kernel modules for connection tracking
+ Includes:
+ - conntrack
+ - defrag
+ - iptables_raw
+ - NOTRACK
+ - state
+
+Package: kmod-ipt-core
+Version: 3.3.8-1
+Depends: kernel (=3.3.8-1-960ef654075dafb6ca4ddb78407259b4)
+Provides: 
+Source: package/kernel
+Section: kernel
+Status: unknown hold not-installed
+Essential: no
+Priority: optional
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Architecture: uml
+Installed-Size: 24722
+Filename: kmod-ipt-core_3.3.8-1_uml.ipk
+Size: 25507
+MD5Sum: e9deeaeb364503654caec811c8a33d02
+Description:  Netfilter core kernel modules
+ Includes:
+ - comment
+ - limit
+ - LOG
+ - mac
+ - multiport
+ - REJECT
+ - TCPMSS
+
+Package: kmod-ipt-nat
+Version: 3.3.8-1
+Depends: kernel (=3.3.8-1-960ef654075dafb6ca4ddb78407259b4), kmod-ipt-core, kmod-ipt-conntrack
+Provides: 
+Source: package/kernel
+Section: kernel
+Status: unknown hold not-installed
+Essential: no
+Priority: optional
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Architecture: uml
+Installed-Size: 11219
+Filename: kmod-ipt-nat_3.3.8-1_uml.ipk
+Size: 12009
+MD5Sum: c2ac3c6aae3e62e62948b2de7ddb2c45
+Description:  Netfilter (IPv4) kernel modules for basic NAT targets
+ Includes:
+ - MASQUERADE
+
+Package: kmod-ipt-nathelper
+Version: 3.3.8-1
+Depends: kernel (=3.3.8-1-960ef654075dafb6ca4ddb78407259b4), kmod-ipt-core, kmod-ipt-nat
+Provides: 
+Source: package/kernel
+Section: kernel
+Status: unknown hold not-installed
+Essential: no
+Priority: optional
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Architecture: uml
+Installed-Size: 7179
+Filename: kmod-ipt-nathelper_3.3.8-1_uml.ipk
+Size: 8032
+MD5Sum: 0f8855e01d55da4b763abe7ac8668c30
+Description:  Default Netfilter (IPv4) Conntrack and NAT helpers
+ Includes:
+ - ftp
+ - irc
+ - tftp
+
+Package: kmod-lib-crc-ccitt
+Version: 3.3.8-1
+Depends: kernel (=3.3.8-1-960ef654075dafb6ca4ddb78407259b4)
+Provides: 
+Source: package/kernel
+Section: kernel
+Status: unknown hold not-installed
+Essential: no
+Priority: optional
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Architecture: uml
+Installed-Size: 1446
+Filename: kmod-lib-crc-ccitt_3.3.8-1_uml.ipk
+Size: 2212
+MD5Sum: 2b5ffc4cfc2605db3585577ade69c0d2
+Description:  Kernel module for CRC-CCITT support
+
+Package: kmod-ppp
+Version: 3.3.8-1
+Depends: kernel (=3.3.8-1-960ef654075dafb6ca4ddb78407259b4), kmod-lib-crc-ccitt
+Provides: 
+Source: package/kernel
+Section: kernel
+Status: unknown hold not-installed
+Essential: no
+Priority: optional
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Architecture: uml
+Installed-Size: 22308
+Filename: kmod-ppp_3.3.8-1_uml.ipk
+Size: 23075
+MD5Sum: 91239e920e8e710c1e27530cffa31f86
+Description:  Kernel modules for PPP support
+
+Package: kmod-pppoe
+Version: 3.3.8-1
+Depends: kernel (=3.3.8-1-960ef654075dafb6ca4ddb78407259b4), kmod-ppp, kmod-pppox
+Provides: 
+Source: package/kernel
+Section: kernel
+Status: unknown hold not-installed
+Essential: no
+Priority: optional
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Architecture: uml
+Installed-Size: 6865
+Filename: kmod-pppoe_3.3.8-1_uml.ipk
+Size: 7652
+MD5Sum: 4c2d25e4a26b12e476c8a775b3bacbeb
+Description:  Kernel module for PPPoE (PPP over Ethernet) support
+
+Package: kmod-pppox
+Version: 3.3.8-1
+Depends: kernel (=3.3.8-1-960ef654075dafb6ca4ddb78407259b4), kmod-ppp
+Provides: 
+Source: package/kernel
+Section: kernel
+Status: unknown hold not-installed
+Essential: no
+Priority: optional
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Architecture: uml
+Installed-Size: 1832
+Filename: kmod-pppox_3.3.8-1_uml.ipk
+Size: 2616
+MD5Sum: 497cc9a3b91ddfb689d403f7fe529836
+Description:  Kernel helper module for PPPoE and PPTP support
+
+Package: libblobmsg-json
+Version: 2013-10-19-734d28eb1a46358743cf8837c91e5d46695c3b91
+Depends: libc, libjson-c, libubox
+Provides: 
+Source: package/libubox
+Section: libs
+Status: unknown ok not-installed
+Essential: no
+Priority: optional
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Architecture: uml
+Installed-Size: 3409
+Filename: libblobmsg-json_2013-10-19-734d28eb1a46358743cf8837c91e5d46695c3b91_uml.ipk
+Size: 4093
+MD5Sum: 30d1bee58d7ca0cb94091a3b9a484bb6
+Description:  blobmsg <-> json conversion library
+
+Package: libgcc
+Version: 4.6-linaro-1
+Depends: 
+Provides: 
+Source: package/toolchain
+Section: libs
+Status: unknown hold not-installed
+Essential: yes
+Priority: optional
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Architecture: uml
+Installed-Size: 47735
+Filename: libgcc_4.6-linaro-1_uml.ipk
+Size: 48429
+MD5Sum: 9e21976409958f1bac394c8a2219213b
+Description:  GCC support library
+
+Package: libip4tc
+Version: 1.4.10-5
+Depends: libc
+Provides: 
+Source: package/iptables
+Section: libs
+Status: unknown ok not-installed
+Essential: no
+Priority: optional
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Architecture: uml
+Installed-Size: 12319
+Filename: libip4tc_1.4.10-5_uml.ipk
+Size: 12953
+MD5Sum: b7674ce9eba33a02e69e53d0d38e461f
+Description:  IPv4 firewall - shared libiptc library
+
+Package: libip6tc
+Version: 1.4.10-5
+Depends: libc
+Provides: 
+Source: package/iptables
+Section: libs
+Status: unknown ok not-installed
+Essential: no
+Priority: optional
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Architecture: uml
+Installed-Size: 12845
+Filename: libip6tc_1.4.10-5_uml.ipk
+Size: 13476
+MD5Sum: fcf8355da157f71cb4a3a89e1297985a
+Description:  IPv6 firewall - shared libiptc library
+
+Package: libjson-c
+Version: 0.11-2
+Depends: libc
+Provides: 
+Source: package/libjson-c
+Section: libs
+Status: unknown ok not-installed
+Essential: no
+Priority: optional
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Architecture: uml
+Installed-Size: 16712
+Filename: libjson-c_0.11-2_uml.ipk
+Size: 17259
+MD5Sum: b1b9c1bc9ecf6df0e47dbf71b46e96f4
+Description:  This package contains a library for javascript object notation backends.
+
+Package: libnl-tiny
+Version: 0.1-3
+Depends: libc
+Provides: 
+Source: package/libnl-tiny
+Section: libs
+Status: unknown ok not-installed
+Essential: no
+Priority: optional
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Architecture: uml
+Installed-Size: 16828
+Filename: libnl-tiny_0.1-3_uml.ipk
+Size: 17252
+MD5Sum: 62f9eecd1ef26d55dc1fc15c89053bc0
+Description:  This package contains a stripped down version of libnl
+
+Package: libubox
+Version: 2013-10-19-734d28eb1a46358743cf8837c91e5d46695c3b91
+Depends: libc
+Provides: 
+Source: package/libubox
+Section: libs
+Status: unknown ok not-installed
+Essential: no
+Priority: optional
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Architecture: uml
+Installed-Size: 14451
+Filename: libubox_2013-10-19-734d28eb1a46358743cf8837c91e5d46695c3b91_uml.ipk
+Size: 15009
+MD5Sum: b34ea1f61bd6b4809d66e7a508926b95
+Description:  Basic utility library
+
+Package: libubus
+Version: 2013-08-08-b20a8a01c7faea5bcc9d34d10dcf7736589021b8
+Depends: libc, libubox
+Provides: 
+Source: package/ubus
+Section: libs
+Status: unknown ok not-installed
+Essential: no
+Priority: optional
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Architecture: uml
+Installed-Size: 13021
+Filename: libubus_2013-08-08-b20a8a01c7faea5bcc9d34d10dcf7736589021b8_uml.ipk
+Size: 13642
+MD5Sum: c34216c41e716724b37a254606d059ac
+Description:  OpenWrt RPC client library
+
+Package: libuci
+Version: 2013-06-11.1-1
+Depends: libc, libubox
+Provides: 
+Source: package/uci
+Section: libs
+Status: unknown ok not-installed
+Essential: no
+Priority: optional
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Architecture: uml
+Installed-Size: 17166
+Filename: libuci_2013-06-11.1-1_uml.ipk
+Size: 17826
+MD5Sum: 1ce9bbe84300174a5d7f8fad500a9305
+Description:  C library for the Unified Configuration Interface (UCI)
+
+Package: libxtables
+Version: 1.4.10-5
+Depends: libc
+Provides: 
+Source: package/iptables
+Section: libs
+Status: unknown ok not-installed
+Essential: no
+Priority: optional
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Architecture: uml
+Installed-Size: 12524
+Filename: libxtables_1.4.10-5_uml.ipk
+Size: 13082
+MD5Sum: 2223af0f6912ed6a2d5520709a8c5a70
+Description:  IPv4/IPv6 firewall - shared xtables library
+
+Package: mtd
+Version: 18.1
+Depends: libc
+Provides: 
+Source: package/mtd
+Section: utils
+Status: unknown ok not-installed
+Essential: no
+Priority: optional
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Architecture: uml
+Installed-Size: 9017
+Filename: mtd_18.1_uml.ipk
+Size: 9678
+MD5Sum: 8573e6e459b7294f1d64a65c52316d79
+Description:  This package contains an utility useful to upgrade from other firmware or
+ older OpenWrt releases.
+
+Package: netifd
+Version: 2013-07-16-2674941b06c1ec67f1aff1bff9212e1372106641
+Depends: libc, libuci, libnl-tiny, libubus, ubus, ubusd, jshn
+Provides: 
+Source: package/netifd
+Section: base
+Status: unknown ok not-installed
+Essential: no
+Priority: optional
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Architecture: uml
+Installed-Size: 53279
+Filename: netifd_2013-07-16-2674941b06c1ec67f1aff1bff9212e1372106641_uml.ipk
+Size: 53732
+MD5Sum: c9b35962e9b02f3b46f8a42274f6184b
+Description:  OpenWrt Network Interface Configuration Daemon
+
+Package: opkg
+Version: 9c97d5ecd795709c8584e972bfdf3aee3a5b846d-3
+Depends: libc
+Provides: 
+Source: package/opkg
+Section: base
+Status: unknown ok not-installed
+Essential: no
+Priority: optional
+Maintainer: Jo-Philipp Wich <xm@subsignal.org>
+Architecture: uml
+Installed-Size: 65964
+Filename: opkg_9c97d5ecd795709c8584e972bfdf3aee3a5b846d-3_uml.ipk
+Size: 66666
+MD5Sum: 2af85c4991241d451bfbbe022fa75e97
+Description:  Lightweight package management system
+ opkg is the opkg Package Management System, for handling
+ installation and removal of packages on a system. It can
+ recursively follow dependencies and download all packages
+ necessary to install a particular package.
+ 
+ opkg knows how to install both .ipk and .deb packages.
+
+Package: ppp-mod-pppoe
+Version: 2.4.5-10
+Depends: libc, kmod-pppoe
+Provides: 
+Source: package/ppp
+Section: net
+Status: unknown ok not-installed
+Essential: no
+Priority: optional
+Maintainer: Jo-Philipp Wich <xm@subsignal.org>
+Architecture: uml
+Installed-Size: 10248
+Filename: ppp-mod-pppoe_2.4.5-10_uml.ipk
+Size: 10879
+MD5Sum: ec14db4d3e25ede12bd76e3665799123
+Description:  This package contains a PPPoE (PPP over Ethernet) plugin for ppp.
+
+Package: ppp
+Version: 2.4.5-10
+Depends: libc, kmod-ppp
+Provides: 
+Source: package/ppp
+Section: net
+Status: unknown ok not-installed
+Essential: no
+Priority: optional
+Maintainer: Jo-Philipp Wich <xm@subsignal.org>
+Architecture: uml
+Installed-Size: 117573
+Filename: ppp_2.4.5-10_uml.ipk
+Size: 118164
+MD5Sum: a0d87c0c3a13f32d945b49f481332d1f
+Description:  This package contains the PPP (Point-to-Point Protocol) daemon.
+
+Package: ubus
+Version: 2013-08-08-b20a8a01c7faea5bcc9d34d10dcf7736589021b8
+Depends: libc, libubus, libblobmsg-json, ubusd
+Provides: 
+Source: package/ubus
+Section: base
+Status: unknown ok not-installed
+Essential: no
+Priority: optional
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Architecture: uml
+Installed-Size: 3415
+Filename: ubus_2013-08-08-b20a8a01c7faea5bcc9d34d10dcf7736589021b8_uml.ipk
+Size: 4082
+MD5Sum: 709caf5dd86f1e2158ae03ac14039878
+Description:  OpenWrt RPC client utility
+
+Package: ubusd
+Version: 2013-08-08-b20a8a01c7faea5bcc9d34d10dcf7736589021b8
+Depends: libc, libubox
+Provides: 
+Source: package/ubus
+Section: base
+Status: unknown ok not-installed
+Essential: no
+Priority: optional
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Architecture: uml
+Installed-Size: 8460
+Filename: ubusd_2013-08-08-b20a8a01c7faea5bcc9d34d10dcf7736589021b8_uml.ipk
+Size: 9119
+MD5Sum: 600d3a0a5ad6ac3ae5f3fa437ce4658d
+Description:  OpenWrt RPC daemon
+
+Package: uci
+Version: 2013-06-11.1-1
+Depends: libc, libuci
+Provides: 
+Source: package/uci
+Section: base
+Status: unknown ok not-installed
+Essential: no
+Priority: optional
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Architecture: uml
+Installed-Size: 7057
+Filename: uci_2013-06-11.1-1_uml.ipk
+Size: 7712
+MD5Sum: d60ebd5714c8b707fa6abb5d3fc33ab2
+Description:  Utility for the Unified Configuration Interface (UCI)
+
+Package: wpad-mini
+Version: 20130405-1
+Depends: libc, libubus
+Provides: 
+Source: package/hostapd
+Section: net
+Status: unknown ok not-installed
+Essential: no
+Priority: optional
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Architecture: uml
+Installed-Size: 167437
+Filename: wpad-mini_20130405-1_uml.ipk
+Size: 168162
+MD5Sum: c21247c6d479968857a9eaf01e488889
+Description:  This package contains a minimal IEEE 802.1x/WPA Authenticator and Supplicant (WPA-PSK only).
+
